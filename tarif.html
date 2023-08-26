@@ -1,0 +1,160 @@
+<html>
+
+<style>
+   #layer1, #layer2, #layer3 {
+    position: relative; /* Относительное позиционирование */
+   } 
+   #layer2 {
+    top: -600px; /* Сдвигаем текст вверх */
+    left: 20px; /* Сдвигаем текст вправо */
+    color: #ffa500; /* Оранжевый цвет текста */
+    font-size:70px;  /* Размер шрифта в пикселах */
+   }
+   #layer3 {
+    top: -400px; /* Сдвигаем текст вверх */
+    left: 20px; /* Сдвигаем текст вправо */
+    color: #ffa500; /* Оранжевый цвет текста */
+    font-size:70px;  /* Размер шрифта в пикселах */
+   }
+   #layer1 { z-index: 3; }
+   #layer2 { z-index: 2; }
+   #layer3 { z-index: 1; }
+      
+  </style>
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="image_src" href="http://yalynka.pp.ua/images/ru.jpg">
+<title>Калькулятор РУ</title>
+<meta property="og:title" content="Калькулятор РУ 2020">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Pragma" content="no-cache" />
+<!-- <meta http-equiv="Refresh" content="15" /-->
+
+<script type="text/javascript">
+
+function primer() {
+document.getElementById('notify_user').checked=true;
+			};
+function primer2() {
+document.getElementById('notify_user').disabled=true;
+			};
+function primer3() {
+if(this.options[this.selectedIndex].value == 2) { document.getElementById('new_ves').disabled = 'true'; }
+			};
+</script>
+
+<body bgcolor="#d0f0ff">
+
+<div id="layer1">
+<form action="tarif_5.php" method="post">
+
+<font size="2" color="blue">Тариф 175.00/1НЧ</font><br>
+<select name="type_of_surv" 
+onChange="
+	if(this.options[this.selectedIndex].value == 3) { 
+document.getElementById('new_ves').removeAttribute('disabled');
+document.getElementById('hydro').removeAttribute('disabled');
+document.getElementById('vidr').removeAttribute('disabled');
+document.getElementById('renew').disabled = 'true';
+document.getElementById('renew2').disabled = 'true';
+document.getElementById('new_ves').checked = false;
+document.getElementById('renew').checked = false;
+document.getElementById('renew2').checked = false;
+document.getElementById('hydro').checked = false;
+document.getElementById('n_1932').disabled = 'true';
+document.getElementById('vidr').checked = false; }
+     if(this.options[this.selectedIndex].value == 2.25) { 
+document.getElementById('renew').removeAttribute('disabled');
+document.getElementById('renew2').removeAttribute('disabled');
+document.getElementById('hydro').removeAttribute('disabled');
+document.getElementById('vidr').removeAttribute('disabled');
+document.getElementById('new_ves').disabled = 'true';
+document.getElementById('new_ves').checked = false;
+document.getElementById('renew').checked = false;
+document.getElementById('renew2').checked = false;
+document.getElementById('hydro').checked = false;
+document.getElementById('n_1932').disabled = 'true';
+document.getElementById('vidr').checked = false;  } 
+	if(this.options[this.selectedIndex].value == 2 ){ document.getElementById('new_ves').disabled = 'true'; document.getElementById('renew').disabled = 'true'; document.getElementById('renew2').disabled = 'true';
+document.getElementById('hydro').removeAttribute('disabled');
+document.getElementById('vidr').removeAttribute('disabled');
+document.getElementById('new_ves').checked = false;
+document.getElementById('renew').checked = false;
+document.getElementById('renew2').checked = false;
+document.getElementById('hydro').checked = false;
+document.getElementById('n_1932').disabled = 'true';
+document.getElementById('vidr').checked = false;  } 
+	if(this.options[this.selectedIndex].value == 1 ){ document.getElementById('new_ves').disabled = 'true'; document.getElementById('renew').disabled = 'true'; document.getElementById('renew2').disabled = 'true';
+document.getElementById('hydro').removeAttribute('disabled');
+document.getElementById('vidr').removeAttribute('disabled');
+document.getElementById('new_ves').checked = false;
+document.getElementById('renew').checked = false;
+document.getElementById('renew2').checked = false;
+document.getElementById('hydro').checked = false;
+document.getElementById('vidr').checked = false;
+document.getElementById('n_1932').removeAttribute('disabled');
+  }">
+
+  <option value=3>Первісний</option>
+  <option value=2.25>Черговий</option>
+  <option value=2>Проміжний (1 раз за перід дії класу)</option>
+  <option value=1>Проміжний (1 раз за 12 місяців)</option>
+</select><br>
+<font size="2">*Первісний - постановка на облік або відновлення класу</font>
+
+<br><br>
+<!--<input type="checkbox" name="n_1932" id="n_1932">1.9.32 - поставьте галочку<br>-->
+<input type="checkbox" name="new_ves" id="new_ves">если судно "приймається на облік" - поставьте галочку<br>
+<input type="checkbox" name="renew" id="renew">если "черговий без зміни власника (оновлення)" - поставьте галочку<br>
+<input type="checkbox" name="renew2" id="renew2">если "черговий без зміни власника (оновлення) без копій" - поставьте галочку<br>
+<input type="checkbox" name="hydro" id="hydro">если судно - "гідроцикл" - поставьте галочку<br>
+<input type="checkbox" name="vidr" id="vidr">"з відрядженням 1 день" - поставьте галочку<br><br>
+Додати документ, введіть кількість  
+<input type="text" name="document_1" value="0" size="1"><br>
+Додати копію документу, введіть кількість  
+<input type="text" name="document_copy_1" value="0" size="1"><br>
+
+
+
+<!-- <input type="checkbox" name="new_ves" checked>если т/с принимается на учет - поставьте галочку -->
+<br><br>
+
+<select name=lenght>
+  <option value=1>до 6.0 м</option>
+  <option value=1.5>понад 6.0 м до 12.0 м</option>
+</select>
+
+<br><br>
+
+<select name=kol_korp>
+  <option value=1>Однокорпусні</option>
+  <option value=1.2>Багатокорпусні</option>
+</select><br>
+<input type="hidden" size="6" name="norm_hour" value="175.00">
+<!--Norm_hour 2019<input type="text" size="6" name="norm_hour" value="130" readonly>
+<font color="red"><br><br>C 02.01.2020 изменяются тарифы РУ<br>
+этот сайт будет закрыт !</font>
+<br><br>-->
+
+
+
+Потужність механічної установки, к.с.
+<input type="text" name="power_of_engine" value=""><br> 
+<font size="2">**для "гребного судна" вводить 0 к.с.</font><br>
+<font size="2">***десятые вводить через точку</font>
+<br><br>
+
+
+<input type="submit" name="submit" value="Рассчитать">
+
+</div>
+<!-- <div id="layer2">тариф 2019</div> -->
+<!-- <div id="layer3">тариф 2019</div> -->
+
+<br><br>
+
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+my_job
+"ozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051"
+
+my_home
+"ozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36 OPR/56.0.3051.36"
+
+my_Samsung
+"SM-J120H Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/6"
+
+Yulia
+"ozilla/5.0 (Linux; Android 7.0; Redmi Note 4"

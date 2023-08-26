@@ -1,0 +1,26 @@
+Oleg_1
+"176.37.166.29"
+
+Oleg_2
+"82.145.223.42"
+
+Oleg_3
+"ozilla/5.0 (Linux; Android 8.0.0; LLD-L21) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+my_home
+"ozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+my_Samsung
+"inux; Android 5.1.1; SM-J120H Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+Yulia
+"ozilla/5.0 (Linux; Android 7.0; Redmi Note 4"
+
+tork
+"ozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+fed
+"ozilla/5.0 (Linux; Android 7.1.1; Nokia 2 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+Lup
+"ozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"

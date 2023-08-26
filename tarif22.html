@@ -1,0 +1,75 @@
+<html>
+
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="image_src" href="http://yalynka.pp.ua/images/umri.jpg">
+<title>Калькулятор 1069</title>
+<meta property="og:title" content="Калькулятор 1069">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+<form action="tarif_umri.php" method="post">
+
+<br>
+<p><b>Книга или Реестр?</b></p>
+    <p><input name="k_or_r" type="radio" value="k">Книга</p>
+    <p><input name="k_or_r" type="radio" value="r">Реестр</p>
+    
+<br>
+<font color="blue"><b>KNIGA</b></font><br>
+
+<select name=action1>
+  <option value=140>Реєстрація судна</option>
+  <option value=45>Виключення судна</option>
+  <option value=25>Оновлення судна</option>
+  <option value=141>Внесення змін</option>
+  <option value=142>Перереєстрація</option>
+</select>
+
+<br><br>
+Довжина судна, м
+<select name=lenght1>
+  <option value=0.2>2.5-3.49</option>
+  <option value=0.3>3.5-4.49</option>
+  <option value=0.4>4.5-5.49</option>
+  <option value=0.5>5.5-6.49</option>
+  <option value=0.6>6.5-7.49</option>
+  <option value=1>7.5 і більше</option>
+</select>
+
+<br><br>
+
+
+
+Курс НБУ
+<input type="text" name="course" value="0">
+<br><font color="blue">Курс НБУ сьогодні:</b><br>
+<img src="http://www.proext.com/export/curr/6b.png" border="0" alt="  " title="  "></font>
+
+
+<br><br><br><br>
+<font color="blue"><b>REESTR (до 500 р.т.)</b></font><br>
+Вік судна, років
+
+<select name=age>
+  <option value=0.8>до 5 років</option>
+  <option value=1>5-10 років</option>
+  <option value=1.2>10 і більше</option>
+</select>
+<br><br>
+<select name=action2>
+  <option value=140>Реєстрація</option>
+  <option value=70>Тимчасова реєстрація</option>
+  <option value=45>Виключення</option>
+  <option value=25>Оновлення (дублікат)</option>
+  <option value=141>Внесення змін</option>
+  <option value=142>Перереєстрація</option>
+
+</select>
+<br><br>
+<input type="submit" name="submit" value="Рассчитать">
+
+</form>  
+ 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+my_home
+"ozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+my_home_2
+"!ozilla/5.0 (Windows NT 6.1; Win64; x64; rv:73.0) Gecko/20100101"
+
+my_Samsung
+"inux; Android 5.1.1; SM-J120H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+Yulia
+"ozilla/5.0 (Linux; Android 7.0; Redmi Note 4"
+
+Lup
+"ozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/"
+
+Tom
+"!ozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130"
+
+DIR
+"ozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324."
