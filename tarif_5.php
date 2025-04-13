@@ -12,7 +12,7 @@ include ("functions_yalynka.php");
 //check_valid_user();
 
 //$norm_hour=58.2;
-
+//test
 //print_r($_SERVER);
 
  $ip=getenv("REMOTE_ADDR");
